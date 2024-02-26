@@ -1,0 +1,124 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "DoctorAppointment.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DoctorAppointment.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DoctorAppointment.Contracts.dll": {}
+        }
+      },
+      "DoctorAppointment.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DoctorAppointment.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DoctorAppointment.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DoctorAppointment.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../DoctorAppointment.Contracts/DoctorAppointment.Contracts.csproj",
+      "msbuildProject": "../DoctorAppointment.Contracts/DoctorAppointment.Contracts.csproj"
+    },
+    "DoctorAppointment.Entities/1.0.0": {
+      "type": "project",
+      "path": "../DoctorAppointment.Entities/DoctorAppointment.Entities.csproj",
+      "msbuildProject": "../DoctorAppointment.Entities/DoctorAppointment.Entities.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "DoctorAppointment.Contracts >= 1.0.0",
+      "DoctorAppointment.Entities >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\layay\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj",
+      "projectName": "DoctorAppointment.Services",
+      "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj",
+      "packagesPath": "C:\\Users\\layay\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\layay\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://azure.taavserver.ir/Taav/ERP/_packaging/TaavNuget/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj": {
+              "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj"
+            },
+            "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj": {
+              "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

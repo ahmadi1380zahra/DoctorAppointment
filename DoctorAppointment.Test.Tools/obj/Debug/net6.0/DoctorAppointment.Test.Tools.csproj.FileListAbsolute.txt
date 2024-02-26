@@ -1,0 +1,12 @@
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\bin\Debug\net6.0\DoctorAppointment.Test.Tools.deps.json
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\bin\Debug\net6.0\DoctorAppointment.Test.Tools.dll
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\bin\Debug\net6.0\DoctorAppointment.Test.Tools.pdb
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\obj\Debug\net6.0\DoctorAppointment.Test.Tools.csproj.AssemblyReference.cache
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\obj\Debug\net6.0\DoctorAppointment.Test.Tools.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\obj\Debug\net6.0\DoctorAppointment.Test.Tools.AssemblyInfoInputs.cache
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\obj\Debug\net6.0\DoctorAppointment.Test.Tools.AssemblyInfo.cs
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\obj\Debug\net6.0\DoctorAppointment.Test.Tools.csproj.CoreCompileInputs.cache
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\obj\Debug\net6.0\DoctorAppointment.Test.Tools.dll
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\obj\Debug\net6.0\refint\DoctorAppointment.Test.Tools.dll
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\obj\Debug\net6.0\DoctorAppointment.Test.Tools.pdb
+C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Test.Tools\obj\Debug\net6.0\ref\DoctorAppointment.Test.Tools.dll

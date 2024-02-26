@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DoctorAppointment.Services/1.0.0": {
+        "dependencies": {
+          "DoctorAppointment.Contracts": "1.0.0",
+          "DoctorAppointment.Entities": "1.0.0"
+        },
+        "runtime": {
+          "DoctorAppointment.Services.dll": {}
+        }
+      },
+      "DoctorAppointment.Contracts/1.0.0": {
+        "runtime": {
+          "DoctorAppointment.Contracts.dll": {}
+        }
+      },
+      "DoctorAppointment.Entities/1.0.0": {
+        "runtime": {
+          "DoctorAppointment.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DoctorAppointment.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DoctorAppointment.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DoctorAppointment.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

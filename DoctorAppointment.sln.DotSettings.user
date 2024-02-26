@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1861de60_002D091f_002D42b0_002D93b3_002Dfff550a4cc88/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Add_adds_a_new_doctor_properly" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::92664304-A825-4334-9AB4-B6818727103B::net6.0::DoctorAppointment.Services.Unit.Tests.DoctorServiceTests.Add_adds_a_new_doctor_properly&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::92664304-A825-4334-9AB4-B6818727103B::net6.0::DoctorAppointment.Services.Unit.Tests.DoctorServiceTests.Update_updates_doctor_properly&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

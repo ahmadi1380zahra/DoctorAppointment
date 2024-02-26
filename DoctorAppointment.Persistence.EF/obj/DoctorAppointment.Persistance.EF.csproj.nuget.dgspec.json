@@ -1,0 +1,160 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistance.EF\\DoctorAppointment.Persistance.EF.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj",
+        "projectName": "DoctorAppointment.Contracts",
+        "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj",
+        "packagesPath": "C:\\Users\\layay\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\layay\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://azure.taavserver.ir/Taav/ERP/_packaging/TaavNuget/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistance.EF\\DoctorAppointment.Persistance.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistance.EF\\DoctorAppointment.Persistance.EF.csproj",
+        "projectName": "DoctorAppointment.Persistance.EF",
+        "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistance.EF\\DoctorAppointment.Persistance.EF.csproj",
+        "packagesPath": "C:\\Users\\layay\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistance.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\layay\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://azure.taavserver.ir/Taav/ERP/_packaging/TaavNuget/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj": {
+                "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
