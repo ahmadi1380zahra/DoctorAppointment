@@ -9,3 +9,15 @@ C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Entities\obj\De
 C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\refint\DoctorAppointment.Entities.dll
 C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\DoctorAppointment.Entities.pdb
 C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\ref\DoctorAppointment.Entities.dll
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\bin\Debug\net6.0\DoctorAppointment.Entities.deps.json
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\bin\Debug\net6.0\DoctorAppointment.Entities.dll
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\bin\Debug\net6.0\DoctorAppointment.Entities.pdb
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\DoctorAppointment.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\DoctorAppointment.Entities.AssemblyInfoInputs.cache
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\DoctorAppointment.Entities.AssemblyInfo.cs
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\DoctorAppointment.Entities.csproj.CoreCompileInputs.cache
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\DoctorAppointment.Entities.sourcelink.json
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\DoctorAppointment.Entities.dll
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\refint\DoctorAppointment.Entities.dll
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\DoctorAppointment.Entities.pdb
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\obj\Debug\net6.0\ref\DoctorAppointment.Entities.dll

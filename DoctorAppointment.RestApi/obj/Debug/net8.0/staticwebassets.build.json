@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mUIk/G9CNn7tZKSHmN9WDbMGNtfsiBhbdg3awppl41M=",
+  "Source": "DoctorAppointment.RestApi",
+  "BasePath": "_content/DoctorAppointment.RestApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

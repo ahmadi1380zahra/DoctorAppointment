@@ -7,10 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Doctors\Exceptions\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\DoctorAppointment.Contracts\DoctorAppointment.Contracts.csproj" />
       <ProjectReference Include="..\DoctorAppointment.Entities\DoctorAppointment.Entities.csproj" />
     </ItemGroup>

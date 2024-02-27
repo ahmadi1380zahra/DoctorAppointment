@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DoctorAppointment.Entities
-build_property.ProjectDir = C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Entities\
+build_property.ProjectDir = C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Entities\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

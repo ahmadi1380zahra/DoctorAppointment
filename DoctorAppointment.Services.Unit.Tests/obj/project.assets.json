@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net8.0": {
       "coverlet.collector/6.0.0": {
         "type": "package",
         "build": {
@@ -1134,7 +1134,7 @@
           "lib/netstandard2.0/_._": {}
         },
         "build": {
-          "buildTransitive/net6.0/SQLitePCLRaw.lib.e_sqlite3.targets": {}
+          "buildTransitive/net7.0/SQLitePCLRaw.lib.e_sqlite3.targets": {}
         },
         "runtimeTargets": {
           "runtimes/alpine-arm/native/libe_sqlite3.so": {
@@ -1149,7 +1149,7 @@
             "assetType": "native",
             "rid": "alpine-x64"
           },
-          "runtimes/browser-wasm/nativeassets/net6.0/e_sqlite3.a": {
+          "runtimes/browser-wasm/nativeassets/net7.0/e_sqlite3.a": {
             "assetType": "native",
             "rid": "browser-wasm"
           },
@@ -2614,10 +2614,9 @@
           "buildMultiTargeting/xunit.core.targets": {}
         }
       },
-      "xunit.extensibility.core/2.4.2": {
+      "xunit.extensibility.core/2.7.0": {
         "type": "package",
         "dependencies": {
-          "NETStandard.Library": "1.6.1",
           "xunit.abstractions": "2.0.3"
         },
         "compile": {
@@ -7849,13 +7848,14 @@
         "xunit.core.nuspec"
       ]
     },
-    "xunit.extensibility.core/2.4.2": {
-      "sha512": "W1BoXTIN1C6kpVSMw25huSet25ky6IAQUNovu3zGOGN/jWnbgSoTyCrlIhmXSg0tH5nEf8q7h3OjNHOjyu5PfA==",
+    "xunit.extensibility.core/2.7.0": {
+      "sha512": "JLnx4PI0vn1Xr1Ust6ydrp2t/ktm2dyGPAVoDJV5gQuvBMSbd2K7WGzODa2ttiz030CeQ8nbsXl05+cvf7QNyA==",
       "type": "package",
-      "path": "xunit.extensibility.core/2.4.2",
+      "path": "xunit.extensibility.core/2.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "_content/README.md",
         "_content/logo-128-transparent.png",
         "lib/net452/xunit.core.dll",
         "lib/net452/xunit.core.dll.tdnet",
@@ -7864,7 +7864,7 @@
         "lib/net452/xunit.runner.utility.net452.dll",
         "lib/netstandard1.1/xunit.core.dll",
         "lib/netstandard1.1/xunit.core.xml",
-        "xunit.extensibility.core.2.4.2.nupkg.sha512",
+        "xunit.extensibility.core.2.7.0.nupkg.sha512",
         "xunit.extensibility.core.nuspec"
       ]
     },
@@ -7945,52 +7945,58 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "DoctorAppointment.Contracts >= 1.0.0",
+    "net8.0": [
       "DoctorAppointment.Persistence.EF >= 1.0.0",
+      "DoctorAppointment.Services >= 1.0.0",
       "DoctorAppointment.Test.Tools >= 1.0.0",
       "FluentAssertions >= 6.12.0",
       "Microsoft.NET.Test.Sdk >= 17.6.0",
       "coverlet.collector >= 6.0.0",
       "xunit >= 2.4.2",
+      "xunit.extensibility.core >= 2.7.0",
       "xunit.runner.visualstudio >= 2.4.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\layay\\.nuget\\packages\\": {}
+    "C:\\Users\\zizig\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj",
       "projectName": "DoctorAppointment.Services.Unit.Tests",
-      "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj",
-      "packagesPath": "C:\\Users\\layay\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\obj\\",
+      "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj",
+      "packagesPath": "C:\\Users\\zizig\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\layay\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\zizig\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net8.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://azure.taavserver.ir/Taav/ERP/_packaging/TaavNuget/nuget/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj": {
-              "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj"
+            "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj": {
+              "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj"
             },
-            "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj": {
-              "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj"
+            "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj": {
+              "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj"
             },
-            "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj": {
-              "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj"
+            "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj": {
+              "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj"
             }
           }
         }
@@ -8002,8 +8008,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "FluentAssertions": {
             "target": "Package",
@@ -8023,6 +8029,10 @@
             "target": "Package",
             "version": "[2.4.2, )"
           },
+          "xunit.extensibility.core": {
+            "target": "Package",
+            "version": "[2.7.0, )"
+          },
           "xunit.runner.visualstudio": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -8041,27 +8051,35 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: xunit.core 2.4.2 requires xunit.extensibility.core (= 2.4.2) but version xunit.extensibility.core 2.7.0 was resolved.",
+      "libraryId": "xunit.extensibility.core",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: xunit.extensibility.execution 2.4.2 requires xunit.extensibility.core (= 2.4.2) but version xunit.extensibility.core 2.7.0 was resolved.",
+      "libraryId": "xunit.extensibility.core",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

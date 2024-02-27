@@ -9,3 +9,15 @@ C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\D
 C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\refint\DoctorAppointment.Contracts.dll
 C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.pdb
 C:\Users\layay\RiderProjects\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\ref\DoctorAppointment.Contracts.dll
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.deps.json
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.dll
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\bin\Debug\net6.0\DoctorAppointment.Contracts.pdb
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.AssemblyInfoInputs.cache
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.AssemblyInfo.cs
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.sourcelink.json
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.dll
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\refint\DoctorAppointment.Contracts.dll
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\DoctorAppointment.Contracts.pdb
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.Contracts\obj\Debug\net6.0\ref\DoctorAppointment.Contracts.dll

@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj": {}
+    "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj": {
+    "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj",
         "projectName": "DoctorAppointment.Contracts",
-        "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj",
-        "packagesPath": "C:\\Users\\layay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\obj\\",
+        "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj",
+        "packagesPath": "C:\\Users\\zizig\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Contracts\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\layay\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\zizig\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://azure.taavserver.ir/Taav/ERP/_packaging/TaavNuget/nuget/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -53,15 +57,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             }
           ],
           "frameworkReferences": {
@@ -69,29 +73,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj": {
+    "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj",
         "projectName": "DoctorAppointment.Entities",
-        "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj",
-        "packagesPath": "C:\\Users\\layay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Entities\\obj\\",
+        "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj",
+        "packagesPath": "C:\\Users\\zizig\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\layay\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\zizig\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://azure.taavserver.ir/Taav/ERP/_packaging/TaavNuget/nuget/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -122,15 +130,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             }
           ],
           "frameworkReferences": {
@@ -138,39 +146,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj": {
+    "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj",
+        "projectUniqueName": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj",
         "projectName": "DoctorAppointment.Persistence.EF",
-        "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj",
-        "packagesPath": "C:\\Users\\layay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\obj\\",
+        "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj",
+        "packagesPath": "C:\\Users\\zizig\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\layay\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\zizig\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://azure.taavserver.ir/Taav/ERP/_packaging/TaavNuget/nuget/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj": {
-                "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj"
+              "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj": {
+                "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj"
               },
-              "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj": {
-                "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj"
+              "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj": {
+                "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj"
               }
             }
           }
@@ -208,15 +220,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             }
           ],
           "frameworkReferences": {
@@ -224,42 +236,46 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj": {
+    "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj",
         "projectName": "DoctorAppointment.Services.Unit.Tests",
-        "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj",
-        "packagesPath": "C:\\Users\\layay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\obj\\",
+        "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\DoctorAppointment.Services.Unit.Tests.csproj",
+        "packagesPath": "C:\\Users\\zizig\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services.Unit.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\layay\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\zizig\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://azure.taavserver.ir/Taav/ERP/_packaging/TaavNuget/nuget/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj": {
-                "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj"
+              "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj": {
+                "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj"
               },
-              "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj": {
-                "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj"
+              "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj": {
+                "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj"
               },
-              "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj": {
-                "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj"
+              "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj": {
+                "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj"
               }
             }
           }
@@ -271,8 +287,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "FluentAssertions": {
               "target": "Package",
@@ -292,6 +308,10 @@
               "target": "Package",
               "version": "[2.4.2, )"
             },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.7.0, )"
+            },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -310,58 +330,48 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj": {
+    "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj",
+        "projectUniqueName": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj",
         "projectName": "DoctorAppointment.Services",
-        "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj",
-        "packagesPath": "C:\\Users\\layay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services\\obj\\",
+        "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj",
+        "packagesPath": "C:\\Users\\zizig\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\layay\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\zizig\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://azure.taavserver.ir/Taav/ERP/_packaging/TaavNuget/nuget/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj": {
-                "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj"
+              "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj": {
+                "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Contracts\\DoctorAppointment.Contracts.csproj"
               },
-              "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj": {
-                "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj"
+              "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj": {
+                "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Entities\\DoctorAppointment.Entities.csproj"
               }
             }
           }
@@ -389,15 +399,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             }
           ],
           "frameworkReferences": {
@@ -405,29 +415,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj": {
+    "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj",
+        "projectUniqueName": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj",
         "projectName": "DoctorAppointment.Test.Tools",
-        "projectPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj",
-        "packagesPath": "C:\\Users\\layay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Test.Tools\\obj\\",
+        "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Test.Tools\\DoctorAppointment.Test.Tools.csproj",
+        "packagesPath": "C:\\Users\\zizig\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Test.Tools\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\layay\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\zizig\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://azure.taavserver.ir/Taav/ERP/_packaging/TaavNuget/nuget/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -468,15 +482,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.26, 6.0.26]"
             }
           ],
           "frameworkReferences": {
@@ -484,7 +498,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

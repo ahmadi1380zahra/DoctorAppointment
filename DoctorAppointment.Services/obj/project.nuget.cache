@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2PzOHzpC+9vA05jkcmgndA0v/0SquP8MEAtDyuBr9pUQ2ei5f1bmLrhAcIn6Hlc4WNiibMwNR/QIrFKfdpHFiQ==",
+  "dgSpecHash": "5psCvfPyPMm1KWQJUXG1ISD+8MG00SzTCplqVcTVfX+DV48k8/0JKRPlTwiU/91frWzX9oRNgDpNbzLpwhCRqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\layay\\RiderProjects\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj",
+  "projectFilePath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\layay\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\layay\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\layay\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512"
+    "C:\\Users\\zizig\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\zizig\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\zizig\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
   ],
   "logs": []
 }
