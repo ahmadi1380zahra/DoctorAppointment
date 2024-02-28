@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace DoctorAppointment.Services.Patients
 {
-    public class PatientAppService:PatientService
+    public class PatientAppService : PatientService
     {
         private readonly PatientRepository _repository;
         private readonly UnitOfWork _unitOfWork;
-        public PatientAppService(PatientRepository repository,UnitOfWork unitOfWork)
+        public PatientAppService(PatientRepository repository, UnitOfWork unitOfWork)
         {
             _repository = repository;
             _unitOfWork = unitOfWork;
@@ -36,12 +36,36 @@ namespace DoctorAppointment.Services.Patients
             await _unitOfWork.Complete();
         }
 
+        public async Task Delete(int id)
+        {
+            var patient = _repository.Find(id);
+            if(patient is null)
+            {
+                throw new PatientIsNotExistedException();
+            }
+            _repository.Delete(patient);
+            await _unitOfWork.Complete();
+        }
+
+        public List<GetPatientDto> GetAll()
+        {
+            return _repository.GetAll();
+        }
+
         public async Task Update(int id, UpdatePatientDto dto)
         {
             var patient = _repository.Find(id);
-            patient.FirstName= dto.FirstName;
-            patient.LastName= dto.LastName;
-            patient.NationalCode= dto.NationalCode;
+            if (patient is null)
+            {
+                throw new PatientIsNotExistedException();
+            }
+            if (_repository.IsExistNationalCodeExceptItSelf(id, dto.NationalCode))
+            {
+                throw new PatientsNationalCodeIsReduplicatedException();
+            }
+            patient.FirstName = dto.FirstName;
+            patient.LastName = dto.LastName;
+            patient.NationalCode = dto.NationalCode;
             _repository.Update(patient);
             await _unitOfWork.Complete();
         }

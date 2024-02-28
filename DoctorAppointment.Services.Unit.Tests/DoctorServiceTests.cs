@@ -106,7 +106,6 @@ namespace DoctorAppointment.Services.Unit.Tests
         {
             var db = new EFInMemoryDatabase();
             var context = db.CreateDataContext<EFDataContext>();
-            var readContext = db.CreateDataContext<EFDataContext>();
             var doctor = new Doctor
             {
                 FirstName = "dummy-first-name",
