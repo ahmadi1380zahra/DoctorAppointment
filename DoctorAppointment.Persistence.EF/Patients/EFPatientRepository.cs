@@ -30,7 +30,8 @@ namespace DoctorAppointment.Persistance.EF.Patients
 
         public Patient? Find(int id)
         {
-            return _context.Patients.Find(id);
+            return _context.Patients.FirstOrDefault(_ => _.Id == id);
+
         }
 
         public List<GetPatientDto> GetAll()

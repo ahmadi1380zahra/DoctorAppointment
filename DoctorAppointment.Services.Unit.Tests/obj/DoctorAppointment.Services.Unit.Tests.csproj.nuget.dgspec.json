@@ -446,7 +446,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj": {
+                "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Persistence.EF\\DoctorAppointment.Persistence.EF.csproj"
+              },
+              "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj": {
+                "projectPath": "C:\\Users\\zizig\\source\\repos\\dokii\\DoctorAppointment\\DoctorAppointment.Services\\DoctorAppointment.Services.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

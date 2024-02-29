@@ -3,8 +3,10 @@ using DoctorAppointment.Persistance.EF;
 using DoctorAppointment.Persistance.EF.Doctors;
 using DoctorAppointment.Persistence.EF;
 using DoctorAppointment.Services.Doctors;
+using DoctorAppointment.Services.Doctors.Contracts;
 using DoctorAppointment.Services.Doctors.Contracts.Dto;
 using DoctorAppointment.Services.Doctors.Exceptions;
+using DoctorAppointment.Test.Tools.Doctors;
 using DoctorAppointment.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities;
@@ -14,27 +16,25 @@ namespace DoctorAppointment.Services.Unit.Tests
 {
     public class DoctorServiceTests
     {
+        private readonly EFDataContext _context;
+        private readonly EFDataContext _readContext;
+        private readonly DoctorService _sut;
+        public DoctorServiceTests()
+        {
+            var db = new EFInMemoryDatabase();
+            _context = db.CreateDataContext<EFDataContext>();
+            _readContext = db.CreateDataContext<EFDataContext>();
+            _sut = DoctorServiceFactory.Create(_context);
+        }
+
         [Fact]
         public async Task Add_adds_a_new_doctor_properly()
         {
-            //arrange
-            var dto = new AddDoctorDto
-            {
-                FirstName = "dummy-first-name",
-                LastName = "dummy-last-name",
-                Field = "heart",
-                NationalCode = "2283182033"
-            };
-            var db = new EFInMemoryDatabase();
-            var context = db.CreateDataContext<EFDataContext>();
-            var readContext = db.CreateDataContext<EFDataContext>();
-            var sut = new DoctorAppService(new EFDoctorRepository(context), new EFUnitOfWork(context));
+            var dto = AddDoctorDtoFactory.Create();
 
-            //act
-            await sut.Add(dto);
+            await _sut.Add(dto);
 
-            //assert
-            var actual = readContext.Doctors.Single();
+            var actual = _readContext.Doctors.Single();
             actual.FirstName.Should().Be(dto.FirstName);
             actual.LastName.Should().Be(dto.LastName);
             actual.Field.Should().Be(dto.Field);
@@ -43,27 +43,12 @@ namespace DoctorAppointment.Services.Unit.Tests
         [Fact]
         public async Task Add_throws_ReduplicateNationalCodeException_if_national_code_is_existed()
         {
-            var db = new EFInMemoryDatabase();
-            var context = db.CreateDataContext<EFDataContext>();
-            var readContext = db.CreateDataContext<EFDataContext>();
-            var doctor = new Doctor
-            {
-                FirstName = "zahra",
-                LastName = "ahmadi",
-                Field = "heart",
-                NationalCode = "12345673"
-            };
-            context.Save(doctor);
-            var reduplicateDoctorDto = new AddDoctorDto
-            {
-                FirstName = "dummy-first-name",
-                LastName = "dummy-last-name",
-                Field = "heart",
-                NationalCode = "12345673"
-            };
-            var sut = new DoctorAppService(new EFDoctorRepository(context), new EFUnitOfWork(context));
+            var dummyNationalCode = "12345673";
+            var doctor = new DoctorBuilder().WithNationalCode(dummyNationalCode).Build();
+            _context.Save(doctor);
+            var reduplicateDoctorDto = AddDoctorDtoFactory.Create(dummyNationalCode);
 
-            var actual = () => sut.Add(reduplicateDoctorDto);
+            var actual = () => _sut.Add(reduplicateDoctorDto);
 
             await actual.Should().ThrowExactlyAsync<ReduplicateNationalCodeException>();
         }
@@ -71,32 +56,13 @@ namespace DoctorAppointment.Services.Unit.Tests
         [Fact]
         public async Task Update_updates_doctor_properly()
         {
-            var db = new EFInMemoryDatabase();
-            var context = db.CreateDataContext<EFDataContext>();
-            var readContext = db.CreateDataContext<EFDataContext>();
-            //arrange
-            var doctor = new Doctor
-            {
-                FirstName = "dummy-first-name",
-                LastName = "dummy-last-name",
-                Field = "heart",
-                NationalCode = "2283182033"
-            };
-            context.Save(doctor);
-            var sut = new DoctorAppService(new EFDoctorRepository(context), new EFUnitOfWork(context));
-            var updateDto = new UpdateDoctorDto
-            {
-                FirstName = "updated-dummy-first-name",
-                LastName = "updated-dummy-last-name",
-                Field = "child",
-                NationalCode = "2283182033"
-            };
+            var doctor = new DoctorBuilder().Build();
+            _context.Save(doctor);
+            var updateDto = UpdateDoctorDtoFactory.Create();
 
-            //act
-            await sut.Update(doctor.Id, updateDto);
+            await _sut.Update(doctor.Id, updateDto);
 
-            //assert
-            var actual = readContext.Doctors.First(_ => _.Id == doctor.Id);
+            var actual = _readContext.Doctors.First(_ => _.Id == doctor.Id);
             actual.FirstName.Should().Be(updateDto.FirstName);
             actual.LastName.Should().Be(updateDto.LastName);
             actual.Field.Should().Be(updateDto.Field);
@@ -104,34 +70,14 @@ namespace DoctorAppointment.Services.Unit.Tests
         [Fact]
         public async Task Update_throws_ReduplicateNationalCodeException_if_national_code_is_existed()
         {
-            var db = new EFInMemoryDatabase();
-            var context = db.CreateDataContext<EFDataContext>();
-            var doctor = new Doctor
-            {
-                FirstName = "dummy-first-name",
-                LastName = "dummy-last-name",
-                Field = "heart",
-                NationalCode = "2283182033"
-            };
-            var reduplicateDoctor = new Doctor
-            {
-                FirstName = "zahra",
-                LastName = "ahmadi",
-                Field = "heart",
-                NationalCode = "22832899"
-            };
-            context.Save(doctor);
-            context.Save(reduplicateDoctor);
-            var dto = new UpdateDoctorDto
-            {
-                FirstName = "zahra",
-                LastName = "ahmadi",
-                Field = "heart",
-                NationalCode = "2283182033"
-            };
-            var sut = new DoctorAppService(new EFDoctorRepository(context), new EFUnitOfWork(context));
+            var dummyNationalCode = "12234556666";
+            var doctor = new DoctorBuilder().WithNationalCode(dummyNationalCode).Build();
+            var reduplicateDoctor = new DoctorBuilder().Build(); ;
+            _context.Save(doctor);
+            _context.Save(reduplicateDoctor);
+            var dto = UpdateDoctorDtoFactory.Create(dummyNationalCode);
 
-            var actual = () => sut.Update(reduplicateDoctor.Id, dto);
+            var actual = () => _sut.Update(reduplicateDoctor.Id, dto);
 
             await actual.Should().ThrowExactlyAsync<ReduplicateNationalCodeException>();
         }
@@ -139,123 +85,63 @@ namespace DoctorAppointment.Services.Unit.Tests
         [Fact]
         public async Task Update_throws_DoctorNotExistedException()
         {
-            var db = new EFInMemoryDatabase();
-            var context = db.CreateDataContext<EFDataContext>();
             var id = 10;
-            var sut = new DoctorAppService(new EFDoctorRepository(context), new EFUnitOfWork(context));
-            var dto = new UpdateDoctorDto
-            {
-                FirstName = "dummy-first-name",
-                LastName = "dummy-last-name",
-                Field = "heart",
-                NationalCode = "2283182033"
-            };
+            var dto = UpdateDoctorDtoFactory.Create();
 
-            var actual = () => sut.Update(id, dto);
-
+            var actual = () => _sut.Update(id, dto);
 
             await actual.Should().ThrowExactlyAsync<DoctorNotExistedException>();
-
         }
         [Fact]
         public async Task Delete_deletes_a_doctor_by_id()
         {
-            var db = new EFInMemoryDatabase();
-            var context = db.CreateDataContext<EFDataContext>();
-            var readContext = db.CreateDataContext<EFDataContext>();
-            var doctor = new Doctor
-            {
-                FirstName = "zahra",
-                LastName = "ahmadi",
-                Field = "dentist",
-                NationalCode = "12345"
-            };
-            context.Save(doctor);
-            var sut = new DoctorAppService(new EFDoctorRepository(context), new EFUnitOfWork(context));
+            var doctor = new DoctorBuilder().Build();
+            _context.Save(doctor);
 
-            await sut.Delete(doctor.Id);
+            await _sut.Delete(doctor.Id);
 
-            var actual = readContext.Doctors.Count();
+            var actual = _readContext.Doctors.Count();
             actual.Should().Be(0);
         }
         [Fact]
         public async Task Delete_throws_DoctorNotExistedException()
         {
-            var db = new EFInMemoryDatabase();
-            var context = db.CreateDataContext<EFDataContext>();
-            var id = 10;
-            var sut = new DoctorAppService(new EFDoctorRepository(context), new EFUnitOfWork(context));
+            var dummyId = 10;
 
-            var actual = () => sut.Delete(id);
+            var actual = () => _sut.Delete(dummyId);
 
             await actual.Should().ThrowExactlyAsync<DoctorNotExistedException>();
         }
         [Fact]
         public void GetAll_gets_all_doctors_count()
         {
-            var db = new EFInMemoryDatabase();
-            var context = db.CreateDataContext<EFDataContext>();
-            var sut = new DoctorAppService(new EFDoctorRepository(context), new EFUnitOfWork(context));
-            var doctor1 = new Doctor
-            {
-                FirstName = "zahra",
-                LastName = "ahmadi",
-                NationalCode = "11233",
-                Field = "heart"
+            var doctor1 = new DoctorBuilder().Build();
+            var doctor2 = new  DoctorBuilder().Build();
+            var doctor3 = new  DoctorBuilder().Build();
+            var doctor4 = new  DoctorBuilder().Build();
+            _context.Save(doctor1);
+            _context.Save(doctor2);
+            _context.Save(doctor3);
+            _context.Save(doctor4);
 
-            };
-            var doctor2 = new Doctor
-            {
-                FirstName = "sara",
-                LastName = "ss",
-                NationalCode = "12323",
-                Field = "dentist"
-
-            };
-            var doctor3 = new Doctor
-            {
-                FirstName = "sanaz",
-                LastName = "aaa",
-                NationalCode = "12s33",
-                Field = "general"
-            };
-            var doctor4 = new Doctor
-            {
-                FirstName = "sanaz",
-                LastName = "aaa",
-                NationalCode = "12s334",
-                Field = "general"
-            };
-            context.Save(doctor1);
-            context.Save(doctor2);
-            context.Save(doctor3);
-            context.Save(doctor4);
-
-            var actual = sut.GetAll();
+            var actual = _sut.GetAll();
 
             actual.Count().Should().Be(4);
         }
         [Fact]
         public void GetAll_get_a_doctor_check_valid_data()
         {
-            var db = new EFInMemoryDatabase();
-            var context = db.CreateDataContext<EFDataContext>();
-            var doctor = new Doctor
-            {
-                FirstName = "sanaz",
-                LastName = "ahmadi",
-                NationalCode = "12",
-                Field = "general"
-            };
-            context.Save(doctor);
-            var sut = new DoctorAppService(new EFDoctorRepository(context), new EFUnitOfWork(context));
+            
+            var doctor = new DoctorBuilder().Build();
+            _context.Save(doctor);
 
-            var actual = sut.GetAll();
+            var doctors = _sut.GetAll();
 
-            actual.Single().FirstName.Should().Be("sanaz");
-            actual.Single().LastName.Should().Be("ahmadi");
-            actual.Single().NationalCode.Should().Be("12");
-            actual.Single().Field.Should().Be("general");
+            var actual = doctors.Single();
+            actual.FirstName.Should().Be(doctor.FirstName);
+            actual.LastName.Should().Be(doctor.LastName);
+            actual.NationalCode.Should().Be(doctor.NationalCode);
+            actual.Field.Should().Be(doctor.Field);
         }
 
     }

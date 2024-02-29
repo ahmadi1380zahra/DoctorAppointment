@@ -1681,6 +1681,8 @@
       },
       "DoctorAppointment.Test.Tools/1.0.0": {
         "dependencies": {
+          "DoctorAppointment.Persistence.EF": "1.0.0",
+          "DoctorAppointment.Services": "1.0.0",
           "Microsoft.Data.Sqlite.Core": "6.0.27",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.27"
         },
