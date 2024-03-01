@@ -1,4 +1,5 @@
-﻿using DoctorAppointment.Persistence.EF;
+﻿using DoctorAppointment.Entities.Patients;
+using DoctorAppointment.Persistence.EF;
 using DoctorAppointment.Services.Patients;
 using DoctorAppointment.Services.Patients.Contracts;
 using DoctorAppointment.Services.Patients.Contracts.Dtos;

@@ -10,7 +10,7 @@ namespace DoctorAppointment.Test.Tools.Doctors
     public class DoctorBuilder
     {
         private readonly Doctor _doctor;
-        public DoctorBuilder()
+        public  DoctorBuilder()
         {
             _doctor = new Doctor
             {

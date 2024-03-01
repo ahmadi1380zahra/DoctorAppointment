@@ -25,11 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoctorAppointment.Entities"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoctorAppointment.Services.Unit.Tests", "DoctorAppointment.Services.Unit.Tests\DoctorAppointment.Services.Unit.Tests.csproj", "{6736C9D4-5E17-49A0-A956-0DCF64EE1E57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment.Migrations", "DoctorAppointment.Migrations\DoctorAppointment.Migrations.csproj", "{7503914E-5ECE-4ADA-A677-6CD04165CFAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoctorAppointment.Migrations", "DoctorAppointment.Migrations\DoctorAppointment.Migrations.csproj", "{7503914E-5ECE-4ADA-A677-6CD04165CFAA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Persentation", "03.Persentation", "{9FFF83EB-12DE-4A93-A16A-1A7EBCC7A148}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment.RestApi", "DoctorAppointment.RestApi\DoctorAppointment.RestApi.csproj", "{5F8F2446-C7A6-4FFB-A57F-F114CBEFF68F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoctorAppointment.RestApi", "DoctorAppointment.RestApi\DoctorAppointment.RestApi.csproj", "{5F8F2446-C7A6-4FFB-A57F-F114CBEFF68F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

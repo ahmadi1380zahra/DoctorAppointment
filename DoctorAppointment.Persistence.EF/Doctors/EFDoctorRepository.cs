@@ -48,6 +48,11 @@ public class EFDoctorRepository : DoctorRepository
         return  doctors;
     }
 
+    public bool IsDoctorHaveAnAppointment(int id)
+    {
+        return _context.Appointments.Any(_ => _.DoctorId == id);
+    }
+
     public bool IsExistNationalCode(string nationalCode)
     {
         return _context.Doctors.Any(_ => _.NationalCode == nationalCode);

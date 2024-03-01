@@ -14,5 +14,7 @@ public class DoctorEntityMap : IEntityTypeConfiguration<Doctor>
         builder.Property(_ => _.LastName).IsRequired();
         builder.Property(_ => _.Field).IsRequired();
         builder.Property(_ => _.NationalCode).IsRequired();
+
+             
     }
 }

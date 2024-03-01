@@ -45,6 +45,10 @@ public class DoctorAppService : DoctorService
         {
             throw new DoctorNotExistedException();
         }
+        if (_repository.IsDoctorHaveAnAppointment(id))
+        {
+            throw new DoctorHasAnAppointmentYouCantDeleteItExcepion();
+        }
         _repository.Delete(doctor);
         await _unitOfWork.Complete();
     }

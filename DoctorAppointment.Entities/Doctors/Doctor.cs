@@ -1,3 +1,5 @@
+using DoctorAppointment.Entities.Appointments;
+
 namespace DoctorAppointment.Entities.Doctors;
 
 public class Doctor
@@ -7,4 +9,6 @@ public class Doctor
     public string LastName { get; set; }
     public string Field { get; set; }
     public string NationalCode { get; set; }
+    public HashSet<Appointment> Appointments { get; set; }
+
 }

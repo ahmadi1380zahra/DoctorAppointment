@@ -1,4 +1,6 @@
+using DoctorAppointment.Entities.Appointments;
 using DoctorAppointment.Entities.Doctors;
+using DoctorAppointment.Entities.Patients;
 using DoctorAppointment.Services.Patients;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,11 +19,8 @@ public class EFDataContext : DbContext
 
     public DbSet<Doctor> Doctors { get; set; }
     public DbSet<Patient> Patients { get; set; }
-    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    //{
-    //    optionsBuilder.UseSqlServer("Server=.;Database=DoctorAppointmentDB;User ID = sa; Password = 123;TrustServerCertificate = True;");
+    public DbSet<Appointment> Appointments { get; set; }
 
-    //}
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

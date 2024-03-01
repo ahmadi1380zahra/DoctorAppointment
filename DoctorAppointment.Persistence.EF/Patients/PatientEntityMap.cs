@@ -1,4 +1,5 @@
-﻿using DoctorAppointment.Services.Patients;
+﻿using DoctorAppointment.Entities.Patients;
+using DoctorAppointment.Services.Patients;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -17,7 +18,9 @@ namespace DoctorAppointment.Persistance.EF.Patients
             builder.Property(_ => _.Id).ValueGeneratedOnAdd();
             builder.Property(_=>_.FirstName).IsRequired().HasMaxLength(50);
             builder.Property(_=>_.LastName).IsRequired().HasMaxLength(50);
-            builder.Property(_=>_.NationalCode).IsRequired().HasMaxLength(50);
+            builder.Property(_=>_.NationalCode).IsRequired().HasMaxLength(10);
+
+      
         }
     }
 }

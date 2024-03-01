@@ -53,7 +53,6 @@ C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\ob
 C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\obj\Debug\net8.0\DoctorAppointment.RestApi.AssemblyInfoInputs.cache
 C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\obj\Debug\net8.0\DoctorAppointment.RestApi.AssemblyInfo.cs
 C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\obj\Debug\net8.0\DoctorAppointment.RestApi.csproj.CoreCompileInputs.cache
-C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\obj\Debug\net8.0\DoctorAppointment.RestApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\obj\Debug\net8.0\DoctorAppointment.RestApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\obj\Debug\net8.0\DoctorAppointment.RestApi.sourcelink.json
 C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\obj\Debug\net8.0\staticwebassets.build.json
@@ -70,3 +69,4 @@ C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\ob
 C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\obj\Debug\net8.0\DoctorAppointment.RestApi.pdb
 C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\obj\Debug\net8.0\DoctorAppointment.RestApi.genruntimeconfig.cache
 C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\obj\Debug\net8.0\ref\DoctorAppointment.RestApi.dll
+C:\Users\zizig\source\repos\dokii\DoctorAppointment\DoctorAppointment.RestApi\obj\Debug\net8.0\DoctorAppointment.RestApi.MvcApplicationPartsAssemblyInfo.cs

@@ -16,7 +16,7 @@ namespace DoctorAppointment.Services.Patients.Contracts.Dtos
         [MaxLength(50)]
         public string LastName { get; set; }
         [Required]
-        [MaxLength(50)]
+        [MaxLength(10)]
         public string NationalCode { get; set; }
     }
 }

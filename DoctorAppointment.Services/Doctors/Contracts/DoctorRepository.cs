@@ -11,5 +11,5 @@ public interface DoctorRepository
     bool IsExistNationalCodeExceptItSelf(int id,string nationalCode);
     void Delete(Doctor doctor);
     List<GetDoctorDto> GetAll();
-
+    bool IsDoctorHaveAnAppointment(int id);
 }

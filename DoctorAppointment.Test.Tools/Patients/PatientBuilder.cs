@@ -1,4 +1,5 @@
-﻿using DoctorAppointment.Services.Patients;
+﻿using DoctorAppointment.Entities.Patients;
+using DoctorAppointment.Services.Patients;
 using System;
 using System.Collections.Generic;
 using System.Linq;

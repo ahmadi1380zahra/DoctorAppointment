@@ -6,8 +6,10 @@ using DoctorAppointment.Services.Doctors;
 using DoctorAppointment.Services.Doctors.Contracts;
 using DoctorAppointment.Services.Doctors.Contracts.Dto;
 using DoctorAppointment.Services.Doctors.Exceptions;
+using DoctorAppointment.Test.Tools.Appointments;
 using DoctorAppointment.Test.Tools.Doctors;
 using DoctorAppointment.Test.Tools.Infrastructure.DatabaseConfig.Unit;
+using DoctorAppointment.Test.Tools.Patients;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities;
 using System.Numerics;
@@ -104,6 +106,20 @@ namespace DoctorAppointment.Services.Unit.Tests
             actual.Should().Be(0);
         }
         [Fact]
+        public async Task Delete_throws_DoctorHasAnAppointmentYouCantDeleteItExcepion()
+        {
+            var doctor = new DoctorBuilder().Build();
+            _context.Save(doctor);
+            var patient = new PatientBuilder().Build();
+            _context.Save(patient);
+            var appointment = new AppointmentBuilder(patient.Id, doctor.Id).Build();
+            _context.Save(appointment);
+
+            var actual = () => _sut.Delete(doctor.Id);
+
+            await actual.Should().ThrowExactlyAsync<DoctorHasAnAppointmentYouCantDeleteItExcepion>();
+        }
+        [Fact]
         public async Task Delete_throws_DoctorNotExistedException()
         {
             var dummyId = 10;
@@ -116,9 +132,9 @@ namespace DoctorAppointment.Services.Unit.Tests
         public void GetAll_gets_all_doctors_count()
         {
             var doctor1 = new DoctorBuilder().Build();
-            var doctor2 = new  DoctorBuilder().Build();
-            var doctor3 = new  DoctorBuilder().Build();
-            var doctor4 = new  DoctorBuilder().Build();
+            var doctor2 = new DoctorBuilder().Build();
+            var doctor3 = new DoctorBuilder().Build();
+            var doctor4 = new DoctorBuilder().Build();
             _context.Save(doctor1);
             _context.Save(doctor2);
             _context.Save(doctor3);
@@ -131,7 +147,7 @@ namespace DoctorAppointment.Services.Unit.Tests
         [Fact]
         public void GetAll_get_a_doctor_check_valid_data()
         {
-            
+
             var doctor = new DoctorBuilder().Build();
             _context.Save(doctor);
 
